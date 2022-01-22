@@ -1,0 +1,146 @@
+---
+name: Yoji
+surname: Toriumi
+position: "Master of Urban Planning"
+address: "10 Akron Street, Cambridge, Massachusetts"
+phone: +1 617 803 0901
+email: "ytoriumi@gsd.harvard.edu, yoji.toriumi@gmail.com"
+date: "`r format(Sys.time(), '%B %Y')`"
+linkedin: yoji-toriumi
+headcolor: 3c40c6
+output: vitae::awesomecv
+urlcolor: blue
+linkcolor: red
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+```
+
+# Summary
+
+Urban planner with engineering bachelor’s and master’s degrees and nine years of experience in international development cooperation. Proven ability to work in teams as well as individually as is evidenced by the fact that led a section in JICA Nepal Office and JICA HQ. Highly interested in contributing to sound urban growth with skills and knowledge of urban planning, data analysis, and statistics gained throughout my career thus far. Left JICA in July 2021 for pursuing a Master of Urban Planning degree at Harvard University Graduate School of Design and studying urban analytics.
+
+# Education
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Place, ~ Institution, ~ Course,
+  "Master of Urban Planning", "2021 - present","Cambridge, United States", "Graduate School of Design, Harvard University",
+  list("Spatial Analysis (High Pass)", "Quantitative Analysis (High Pass)", "Qualitative Analysis (High Pass)", "Representation for Planners", "Urban Economics for Planners and Policymakers","Core Urban Planning Studio"),"Master of Urban Engineering (GPA: 3.88/4.0)", "2010 - 2012", "Tokyo, Japan","Graduate School of Engineering, The University of Tokyo","",
+  
+  "Bachelor of Urban Engineering", "2006 - 2010", "Tokyo, Japan","Faculty of Engineering, The University of Tokyo",""
+
+) %>% 
+  
+  detailed_entries(Degree, Year, Institution, Place)
+```
+
+# Portfolios and Relevant Coursework at the GSD
+
+- [Spatial Analysis (High Pass)](https://yoji-toriumi.github.io/CV/Spatial_analysis_1.html)
+- [Quantitative Analysis (High Pass)](https://yoji-toriumi.github.io/CV/Quantitative_analysis_1.html)
+- [Qualitative Analysis (High Pass)](https://yoji-toriumi.github.io/CV/Qualitative.pdf)
+- [Representation for Planners](https://yoji-toriumi.github.io/CV/Representation.pdf)
+
+# Work Experience
+
+```{r consulting}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Assistant Director", "Financial Cooperation Implementation Department, Japan International Cooperation Agency (JICA)", "Tokyo, Japan", "July, 2020 - July, 2021", 
+    list("Managed a section composed of 11 technical experts",
+         "Managed appraising design and cost analysis of more than 30 financial projects",
+         "Managed contracts for projects interrupted by Covid-19",
+         "Enhanced effectiveness of financial projects by advising on technical and managerial aspects"
+    ),
+  "Representative", "JICA Nepal Office, Japan International Cooperation Agency (JICA)", "Kathmandu, Nepal", "July, 2016 - June, 2020", 
+    list("Formulated and managed more than ten urban environment and disaster risk reduction (DRR) projects in Nepal", 
+         "Developed country cooperation strategy for Nepal",
+         "Coordinated with stakeholders, including government officials, consultants, and development partners",
+         "Improved urban development management and DRR capacity of the Nepalese government"),
+  "Deputy Assistant Director", "Infrastructure & Peacebuilding Department, Japan International Cooperation Agency (JICA)", "Tokyo, Japan", "May, 2014 - June, 2016",
+  list("Formulated and managed technical assistance and grant projects in developing countries’ urban development sectors", 
+         "Led  housing reconstruction project in Nepal (Won JICA’ Presidential Award, which is given to exemplary projects)"),
+    "Staff Member", "South Asia Department, Japan International Cooperation Agency (JICA)", "Tokyo, Japan", "April, 2012 - April, 2014",
+  list("Formulated urban development loan projects in Pakistan",
+       "Developed country cooperation strategy for Pakistan",
+       "Strengthened relationship between Japan and Pakistan")
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+\newpage
+
+# Qualifications
+
+```{r talks}
+tribble(
+  ~ when, ~ title, ~ place,
+"2019", "1st-Class Architect", "Japan", "2014", "Japan Statistical Society Certificate Grade 2", "Japan") %>% 
+   detailed_entries(
+     with = title, 
+     when = when,
+     where = place)
+```
+
+# Publications
+
+```{r}
+bibliography_entries("rjhpubs.bib")
+```
+
+# Skills
+
+**Coding** 
+
+* R (Tidyverse, tidycensus, tidytransit, sf, leaflet, shiny)
+
+* Phthon (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn)
+
+**Mapping** 
+
+* ArcGIS, QGIS
+
+**Adobe** 
+
+* Indesign, Illustrator, Photoshop
+
+**Microsoft** 
+
+* Word, Excel, Power Point
+
+# Awards
+
+
+```{r }
+awards <- tribble(
+    ~when, ~awards, ~institute,
+    "2021", "Fulbright Scholarship", "Fulbright Program Japan",
+    "2016", "JICA’s Presidential Award", "Japan International Cooperation Agency (JICA)"
+    )
+
+awards %>%
+  detailed_entries(
+    with = awards,
+    when = when,
+    what = institute
+  )
+```
+
+# Languages
+
+```{r }
+languages <- tribble(
+    ~language, ~prof,
+    "Japanese", "Native",
+    "English", "Excellent")
+
+languages %>%
+  detailed_entries(
+    with = language,
+    what = prof
+  )
+```
