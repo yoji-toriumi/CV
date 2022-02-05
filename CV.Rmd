@@ -21,7 +21,7 @@ library(vitae)
 
 # Summary
 
-Urban planner and analyst with engineering bachelor’s and master’s degrees and nine years of experience in international development cooperation. Proven ability to work in teams as well as individually. Highly interested in contributing to sound urban growth with skills and knowledge of urban planning, data analysis, and statistics gained throughout career thus far. Selected as a 2021 Fulbright Grant for graduate study, and pursuing Master of Urban Planning degree at Harvard University and studying analytics methods including ML.
+Urban planner and analyst with engineering bachelor’s and master’s degrees and nine years of experience in international development cooperation. Proven ability to work in teams as well as individually. Highly interested in contributing to sound urban growth with skills and knowledge of urban planning, data analysis, and statistics gained throughout my career thus far. Selected as a 2021 Fulbright Grant for graduate study, pursuing Master of Urban Planning degree at Harvard University and studying analytics methods including ML.
 
 # Education
 ```{r}
@@ -49,30 +49,58 @@ tribble(
 
 ```{r consulting}
 tribble(
-  ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Assistant Director", "Financial Cooperation Implementation Department, Japan International Cooperation Agency (JICA)", "Tokyo, Japan", "July, 2020 - July, 2021", 
-    list("Managed a section composed of 11 technical experts",
-         "Managed appraising design and cost analysis of more than 30 financial projects",
-         "Managed contracts for projects interrupted by Covid-19",
-         "Enhanced effectiveness of financial projects by advising on technical and managerial aspects"
-    ),
-  "Representative", "JICA Nepal Office, Japan International Cooperation Agency (JICA)", "Kathmandu, Nepal", "July, 2016 - June, 2020", 
-    list("Formulated and managed more than ten urban environment and disaster risk reduction (DRR) projects in Nepal", 
-         "Developed country cooperation strategy for Nepal",
-         "Coordinated with stakeholders, including government officials, consultants, and development partners",
-         "Improved urban development management and DRR capacity of the Nepalese government"),
-  "Deputy Assistant Director", "Infrastructure & Peacebuilding Department, Japan International Cooperation Agency (JICA)", "Tokyo, Japan", "May, 2014 - June, 2016",
-  list("Formulated and managed technical assistance and grant projects in developing countries’ urban development sectors", 
-         "Led  housing reconstruction project in Nepal (Won JICA’ Presidential Award, which is given to exemplary projects)"),
-    "Staff Member", "South Asia Department, Japan International Cooperation Agency (JICA)", "Tokyo, Japan", "April, 2012 - April, 2014",
-  list("Formulated urban development loan projects in Pakistan",
-       "Developed country cooperation strategy for Pakistan",
-       "Strengthened relationship between Japan and Pakistan")
-) %>% 
+  ~ role,
+  ~ company,
+  ~ loc,
+  ~ dates,
+  ~ details,
+  "Research Assitant",
+  "Harvard University Graduate School of Design",
+  "Cambridge, U.S",
+  "February, 2022 - Present",
+  list("Using R, assembling and wrangling data extracted from Federal Housing Finance Agency",
+       "Analyzing data and figuring out the trend of housing loans using quantitative methods",
+       "Visualizing findings using ggplot and leaflet packages"),
+  "Assistant Director",
+  "Financial Cooperation Implementation Department, Japan International Cooperation Agency (JICA)",
+  "Tokyo, Japan",
+  "July, 2020 - July, 2021",
+  list(
+    "Managed a section composed of 11 technical experts",
+    "Managed appraising design and cost analysis of more than 30 financial projects",
+    "Managed contracts for projects interrupted by Covid-19",
+    "Enhanced effectiveness of financial projects by advising on technical and managerial aspects"
+  ),
+  "Representative",
+  "JICA Nepal Office, Japan International Cooperation Agency (JICA)",
+  "Kathmandu, Nepal",
+  "July, 2016 - June, 2020",
+  list(
+    "Formulated and managed more than ten urban environment and disaster risk reduction (DRR) projects in Nepal",
+    "Developed country cooperation strategy for Nepal",
+    "Coordinated with stakeholders, including government officials, consultants, and development partners",
+    "Improved urban development management and DRR capacity of the Nepalese government"
+  ),
+  "Deputy Assistant Director",
+  "Infrastructure & Peacebuilding Department, Japan International Cooperation Agency (JICA)",
+  "Tokyo, Japan",
+  "May, 2014 - June, 2016",
+  list(
+    "Formulated and managed technical assistance and grant projects in developing countries’ urban development sectors",
+    "Led  housing reconstruction project in Nepal (Won JICA’ Presidential Award, which is given to exemplary projects)"
+  ),
+  "Staff Member",
+  "South Asia Department, Japan International Cooperation Agency (JICA)",
+  "Tokyo, Japan",
+  "April, 2012 - April, 2014",
+  list(
+    "Formulated urban development loan projects in Pakistan",
+    "Developed country cooperation strategy for Pakistan",
+    "Strengthened relationship between Japan and Pakistan"
+  )
+) %>%
   detailed_entries(role, dates, company, loc, details)
 ```
-
-\newpage
 
 # Qualifications
 
@@ -96,9 +124,9 @@ bibliography_entries("rjhpubs.bib")
 
 **Coding** 
 
-* R (Tidyverse, tidycensus, tidytransit, sf, leaflet, shiny)
+* R (Tidyverse, tidycensus, tidytransit, caret, sf, leaflet, shiny)
 
-* Phthon (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn)
+* Python (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn)
 
 **Mapping** 
 
